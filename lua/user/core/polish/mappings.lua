@@ -1,7 +1,7 @@
 -- local opts = { noremap = true, silent = true }
 -- local term_opts = { silent = true }
 -- local map = vim.keymap.set
-local unmap = vim.keymap.del
+-- local unmap = vim.keymap.del
 
 -- Modes
 --   normal_mode = "n",
@@ -12,4 +12,4 @@ local unmap = vim.keymap.del
 --   command_mode = "c",
 
 -- map("n", "//", ":nohlsearch<CR>", opts)
-unmap("t", "jk")
+-- unmap("i", "jk")
