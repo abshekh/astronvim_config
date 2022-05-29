@@ -109,3 +109,6 @@ map("n", "gl",
 map("n", "<leader>lf",
     function() vim.lsp.buf.formatting() end,
     get_opts(opts, { desc = "Format file with LSP" }))
+map("v", "<leader>lf",
+    function() vim.lsp.buf.range_formatting() end,
+    get_opts(opts, { desc = "Range Formatting" }))
