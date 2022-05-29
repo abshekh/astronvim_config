@@ -3,6 +3,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 local workspace_dir = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
+local lombok = vim.fn.expand('~/.jars/lombok/lombok-1.18.25.jar')
 
 local config = {
   -- The command that starts the language server
@@ -15,6 +16,8 @@ local config = {
     '-Dlog.protocol=true',
     '-Dlog.level=ALL',
     '-Xms1g',
+    '-javaagent:' .. lombok,
+    '-Xbootclasspath/a:' .. lombok,
     '--add-modules=ALL-SYSTEM',
     '--add-opens', 'java.base/java.util=ALL-UNNAMED',
     '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
