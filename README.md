@@ -2,5 +2,12 @@
 
 [AstroNvim](https://github.com/kabinspace/AstroVim)
 
-# User Config Example for AstroVim
-[astronvim_config](https://github.com/datamonsterr/astronvim_config/tree/another_method)
+# User Config Examples for AstroVim
+[Example User Configs](https://astronvim.github.io/recipes/black_belt)
+
+# Base Directory
+```
+~/.config/astronvim
+```
+
+AstroVim automatically picks up user config from here.
